@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stop watch</title>
+	<link rel="stylesheet" href="./output.css">
+</head>
+<body class="min-h-screen flex items-center bg-sky-200">
+	<div class="mx-auto bg-sky-700 w-96 h-32 flex items-center justify-center text-white text-center">
+		<div class="stop-watch">
+			<div class="text-5xl w-96">
+				<span class="hours">00:</span>
+				<span class="minutes">00:</span>
+				<span class="seconds">00.</span>
+				<span class="miliSec text-2xl">00</span>
+			</div>
+			<div class="action mt-5 flex justify-center">
+				<button class="bg-green-400 px-5 py-1 start-btn" onclick="startFunction()">start</button>
+				<button class="bg-red-400 px-5 py-1 hidden pauseResume-btn" onclick="pauseFunction()">
+					<span class="pause">pause</span>
+					<span class="resume hidden">resume</span>
+				</button>
+				<button class="bg-blue-400 px-5 py-1 hidden reset-btn" onclick="resetFunction()">reset</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./app.js"></script>
+</body>
+</html>
